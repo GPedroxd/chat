@@ -34,6 +34,7 @@ function addMessage(type, user, message){
             
             break;
     }
+    ul.scrollTop = ul.scrollHeight;
 }
 
 loginInput.addEventListener('keyup', (e)=>{
