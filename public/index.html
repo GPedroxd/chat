@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Chat</title>
 </head>
 <body>
-    <h1>chat</h1>
+    <div class="page" id="loginPage">
+        <h1>Entre com seu NickName</h1>
+        <input type="text" id="loginNameInput">
+    </div>
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">
+                
+            </ul>
+            <ul  class="userList">
+                
+            </ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" class="chatTextInput" id="chatTextInput" placeholder="Digite sua mensagem aqui! (Aperte enter)"> 
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./assets/javaScript/index.js"></script>
 </body>
 </html>
